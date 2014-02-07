@@ -44,8 +44,6 @@ We provide the graphical (pie chart or bar chart and line) representation for da
 We provide the drill down option for sales order details.
 More features include such as order filter, order export, search etc.
 == Screenshots ==
-
-•	MIS Report Pro for WooCommerce Dashboard (some features only in paid versions)
 2. Daily, weekly, monthly and yearly sales count and amount
 3. Recent order list (Order ID, Order Date, Billing email, First Name, order Item Count and amount)
 4. Top 5 Billing country (total order count and amount)
