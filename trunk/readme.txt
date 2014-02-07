@@ -46,14 +46,10 @@ More features include such as order filter, order export, search etc.
 == Screenshots ==
 
 •	MIS Report Pro for WooCommerce Dashboard (some features only in paid versions)
-
-•	Daily, weekly, monthly and yearly sales count and amount
-
-•	Recent order list (Order ID, Order Date, Billing email, First Name, order Item Count and amount)
-
-•	Top 5 Billing country (total order count and amount)
-
-•	Top 5 customer (Customer billing first name, billing email address, order count and total customer order amount)
+2. Daily, weekly, monthly and yearly sales count and amount
+3. Recent order list (Order ID, Order Date, Billing email, First Name, order Item Count and amount)
+4. Top 5 Billing country (total order count and amount)
+5. Top 5 customer (Customer billing first name, billing email address, order count and total customer order amount)
 == Changelog ==
 * First release. (0.1.1) 
 == Frequently Asked Questions ==
