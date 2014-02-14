@@ -2,7 +2,7 @@
 
 Contributors: Infosoft consultant
 
-Plugin Name: WooCommerce Sales MIS Report
+Plugin Name: WooCommerce Sales MIS Report 
 
 Plugin URI: http://www.plugin.infosofttech.com
 
@@ -10,7 +10,7 @@ Tags: administration, woocommerce, wordpress e-commerce, ecommerce, management, 
 
 Author URI: www.infosofttech.com
 
-Author: Infosoft consultant
+Author: Infosoft Consultant 
 
 Requires at least: 3.5.1
 
