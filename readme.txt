@@ -19,10 +19,10 @@ Tested up to: 3.8.1
 Stable tag: 1.1
 
 Version: 1.1
+
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 == Description ==
-
 Woocommerce Sales Reporter shows you all key sales information in one main Dashboard in very intuitive, easy to understand format which gives a quick
 overview of your business and helps make smart decisions
 Sales Summary Reports like Total Order, Recent Orders, Order Status, Order Summary, Top n Products, Customers, Country, Coupons, Payment Gateway
@@ -34,11 +34,11 @@ Woocommerce Sales Reporter works with WooCommerce latest versions and WP e-Comme
 The Lite version is limited to showing summary data for past one month. Purchase the paid <a href="http://plugins.infosofttech.com" target="_blank">pro versions</a> for full access along with more features, <a href="http://plugins.infosofttech.com" target="_blank">click here</a> for more details
 
 == Installation ==
-•	Ensure you have latest version of [WooCommerce] (http://www.storeapps.org/woocommerce/) plugin installed.
-•	 Download the Plug-in `woocommerce_ic_mis_report.zip`
-•	Unzip and upload contents of the plugin to your '/wp-content/plugins/' directory.
-•	Activate the plugin through the 'Plugins' menu in WordPress
-•	Click on 'MIS Report' option within WordPress admin sidebar menu.
+• Ensure you have latest version of [WooCommerce] (http://www.storeapps.org/woocommerce/) plugin installed.
+• Download the Plug-in `woocommerce_ic_mis_report.zip`
+• Unzip and upload contents of the plugin to your '/wp-content/plugins/' directory.
+• Activate the plugin through the 'Plugins' menu in WordPress
+• Click on 'MIS Report' option within WordPress admin sidebar menu.
 == Upgrade Notice ==
 We provide the up-gradation in Pro version, which will be release soon.
 We are providing more informative and analytics report in pro version. 
@@ -69,4 +69,3 @@ Yes. MIS Report is compatible upto WooCommerce 2.0.20.
 = Can I export data from MIS Report? =
 No. Currently you can only see these reports. We are planning for CSV export in pro version.
 == Donations ==
-
