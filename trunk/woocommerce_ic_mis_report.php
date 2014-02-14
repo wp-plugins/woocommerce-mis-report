@@ -676,7 +676,7 @@ if ( ! class_exists( 'WC_IS_MIS_Report' ) ) {
             </table>	
 			<?php
 			else:
-				echo '<p>No customer found.</p>';
+				echo '<p>No orders found.</p>';
 			endif;
 		}
 	}
