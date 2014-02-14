@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WooCommerce MIS Report
+ * Plugin Name: WooCommerce Sales MIS Report 
  * Plugin URI: http://www.plugin.infosofttech.com
  * Description: Woocommerce Sales Reporter shows you all key sales information in one main Dashboard in very intuitive, easy to understand format which gives a quick overview of your business and helps make smart decisions
  * Version: 1.1
