@@ -1,0 +1,183 @@
+*{margin:0; padding:0;}
+
+a, a:focus{outline:none; border:none;}
+img{outline:none; border:none;}
+
+.clearfix:before, .clearfix:after{display:table; content:" ";}
+.clearfix:after{clear:both;}
+
+.left{float:left;}
+.right{float:right;}
+
+.ic_mis_report{}
+	
+.ic_mis_report .woo_cr-reports-top .postbox{margin-right:15px;}
+.ic_mis_report .woo_cr-reports-top p.stat{font-size:18px;}
+
+table.widefat tr:hover{background:#F9F4D8;}
+table.widefat tr.first:hover{background:none;}
+
+table.widefat .first th:last-child{text-align:right}
+
+.widefat thead th{background:url(../images/titlebg.jpg) left bottom repeat-x; font-size:13px;}
+
+.widefat span.amount{text-align:right; display:block}
+/*.wcismispro_wrap .widefat td.amount{text-align:right;}*/
+
+.LeftSection{float:left; width:300px; margin-right:30px;}
+
+.RightSection{float:left;}
+
+body.js .postbox h3{
+	cursor:default;
+	background:#9EBAA1 !important;
+	color:#fff;
+	padding:5px 0 6px 14px !important;
+	position:relative;
+	font-size:15px !important;
+	text-shadow:1px 1px 1px #719274;
+	}
+	
+body.js .postbox h3 img{
+	vertical-align:middle;
+	padding-right:8px;
+	}
+	
+body.js .wcismispro_wrap .postbox h3:after{clear:both; display:block; content:" ";}
+	
+.form-table td, .form-table th{padding:0; padding-bottom:5px; padding-top:5px;}
+#ddlStatus option, #ddlStatus{text-transform:capitalize;}
+div.pagination{
+	padding:5px;
+	margin:3px;
+	margin-top:10px;
+	text-align:right;
+	margin-right:0;
+	}
+	
+.txtProductID{width:350px;}
+
+div.pagination a{
+	padding:2px 5px 2px 5px;
+	margin:2px;
+	border:1px solid #76A585;
+	
+	text-decoration:none; /* no underline */
+	color:#999;
+	cursor:pointer;
+	}
+div.pagination a:hover, div.pagination a:active{
+	border:1px solid #76A585;			
+	color:#333;
+	}
+div.pagination span.current{
+	padding:2px 5px 2px 5px;
+	margin:2px;
+	border:1px solid #76A585;
+	
+	font-weight:bold;
+	background-color:#9EBAA1;
+	color:#FFF;
+	}
+div.pagination span.disabled{
+	padding:2px 5px 2px 5px;
+	margin:2px;
+	border:1px solid #C6C4C4;
+	color:#C6C4C4;
+	}
+
+
+.RegisterDetailExport{text-align:right;}
+
+.DivBackToList{text-align:right; padding:10px;}
+
+.SubmitExport, .SubmitSearch{ cursor:pointer}
+
+
+table td span.completed{color:green}	
+table td span.on-hold{color:red}
+table td span.processing{color:#21759b}
+table td span.pending{color:#e66f00}
+table td span.refunded,
+table td span.cancelled{color:#999}
+
+#navigation{
+    width:600px;
+	background-color:#FFFFFF;
+	margin-bottom:10px;	
+	}
+
+.collapsible,
+.page_collapsible{
+    margin:0;
+    padding:10px;
+    height:20px;
+
+    border-top:#f0f0f0 1px solid;
+    background:#fff;
+
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    text-transform:uppercase;
+    color:#999;
+    font-size:1em;
+	}
+
+.collapse-open{
+    background:#fff;
+    color:#999;
+	border-bottom:1px solid #CCC;
+	}
+
+.collapse-open span{
+    display:block;
+    float:right;
+    padding:10px;
+	}
+
+.collapse-open span{background:url(../images/minus.png) center center no-repeat;}
+
+.collapse-close span{
+    display:block;
+    float:right;
+    background:url(../images/plus.png) center center no-repeat;
+    padding:10px;
+	}
+
+div.container{padding:0; margin:0;}
+div.content{margin:15px;}
+
+div.backtoprevious, div.RegisterDetailExport{
+	float:right;
+	}
+
+div.backtoprevious{margin-right:20px;}
+
+.TwoCol_Boxes{float:left; width:49.3%; margin-right:15px;}
+
+.ThreeCol_Boxes{float:left; width:32.5%; margin-right:15px;}
+	
+.LastBox_Margin{margin:0px;}
+
+.NotesSec{width:680px;}
+
+.Notes:after{display:block; content:""; clear:both;}
+.Notes{padding:15px 20px 15px 20px; background:#FFF;}
+.Notes .Heading{font-size:17px; color:#4D7451; margin:0 0 10px 0; font-weight:bold;}
+
+.Notes ul{float:left; width:310px;}
+.Notes ul li{
+	line-height:22px;
+	padding-bottom:8px;
+	background-image:url(../images/tick.png);
+	background-repeat:no-repeat;
+	background-position:0 5px;
+	padding-left:30px;
+	}
+	
+.BuyNow{background:url(../images/buy-now.png) no-repeat; width:119px; height:46px; display:block; float:left}
+.ViewDemo{background:url(../images/view-demo.png) no-repeat; width:124px; height:46px; display:block; float:right;}
+
+
+
+
