@@ -2,8 +2,8 @@
 /**
  * Plugin Name: WooCommerce MIS Report
  * Plugin URI: http://www.plugin.infosofttech.com
- * Description: This report provides the sales summary (Day, yesterday, monthly and yearly) in term of amount and order count. Currently the report provide the order summary, recent 5 order, top five countries, top 5 customers.This report helps to monitor the sales status for any business.
- * Version: 0.0.1
+ * Description: Woocommerce Sales Reporter shows you all key sales information in one main Dashboard in very intuitive, easy to understand format which gives a quick overview of your business and helps make smart decisions
+ * Version: 1.1
  * Author: Infosoft Consultant
  * Author URI: http://www.infosofttech.com/deepak.aspx
  * License: A "Slug" license name e.g. GPL2
