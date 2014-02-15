@@ -7,8 +7,8 @@
  * Author: Infosoft Consultant 
  * Author URI: http://www.infosofttech.com/deepak.aspx
  * License: A  "Slug" license name e.g. GPL2
+ *
  */
- 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if ( ! class_exists( 'WC_IS_MIS_Report' ) ) {
 	class WC_IS_MIS_Report{
