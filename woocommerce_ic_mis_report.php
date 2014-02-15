@@ -3,7 +3,7 @@
  * Plugin Name: WooCommerce Sales MIS Report 
  * Plugin URI: http://www.plugin.infosofttech.com
  * Description: Woocommerce Sales Reporter shows you all key sales information in one main Dashboard in very intuitive, easy to understand format which gives a quick overview of your business and helps make smart decisions
- * Version: 1.1
+ * Version: 1.2
  * Author: Infosoft Consultant 
  * Author URI: http://www.infosofttech.com/deepak.aspx
  * License: A "Slug" license name e.g. GPL2
@@ -443,7 +443,9 @@ if ( ! class_exists( 'WC_IS_MIS_Report' ) ) {
 					LEFT JOIN  {$wpdb->prefix}posts as posts ON posts.ID=postmeta.post_id
 					
 					WHERE meta_key='_order_total' 
-						AND  posts.post_date= DATE_SUB(NOW(), INTERVAL 1 DAY)";
+						AND  DATE(posts.post_date)= DATE(DATE_SUB(NOW(), INTERVAL 1 DAY))
+						
+						";
 						
 			$sql .= "	 UNION ";	
 			/*Week*/		
@@ -457,7 +459,7 @@ if ( ! class_exists( 'WC_IS_MIS_Report' ) ) {
 					
 					WHERE meta_key='_order_total' 
 						
-				 	AND  posts.post_date> DATE_SUB(NOW(), INTERVAL 1 WEEK)
+				 	AND WEEK(DATE(CURDATE())) = WEEK( DATE(posts.post_date))
 					";
 			/*Month*/	
 			$sql .= "	 UNION ";		
@@ -471,8 +473,12 @@ if ( ! class_exists( 'WC_IS_MIS_Report' ) ) {
 					LEFT JOIN  {$wpdb->prefix}posts as posts ON posts.ID=postmeta.post_id
 					
 					WHERE meta_key='_order_total' 
-				 	AND  posts.post_date>  DATE_SUB(NOW(), INTERVAL 1 MONTH)
+				 	AND MONTH(DATE(CURDATE())) = MONTH( DATE(posts.post_date))
+					
+					AND YEAR(DATE(CURDATE())) = YEAR( DATE(posts.post_date))
 					";
+					
+					
 			/*Year*/		
 			$sql .= "	 UNION ";	
 			
@@ -485,7 +491,7 @@ if ( ! class_exists( 'WC_IS_MIS_Report' ) ) {
 					LEFT JOIN  {$wpdb->prefix}posts as posts ON posts.ID=postmeta.post_id
 					
 					WHERE meta_key='_order_total' 
-				 	AND  posts.post_date>  DATE_SUB(NOW(), INTERVAL 1 YEAR)
+				 	AND YEAR(DATE(CURDATE())) = YEAR( DATE(posts.post_date))
 					
 					";
 			
@@ -680,7 +686,7 @@ if ( ! class_exists( 'WC_IS_MIS_Report' ) ) {
 			endif;
 		}
 	}
-}	
+}	  
 if(!in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {	
 	if(!defined('WC_IS_MIS_WC_ACITVE')) define( 'WC_IS_MIS_WC_ACITVE', FALSE );
 	function wcismis_admin_notices(){
