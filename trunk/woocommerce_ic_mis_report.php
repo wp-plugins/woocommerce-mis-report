@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: WooCommerce MIS Report
+ * Plugin Name: WooCommerce Sales MIS Report 
  * Plugin URI: http://www.plugin.infosofttech.com
  * Description: Woocommerce Sales Reporter shows you all key sales information in one main Dashboard in very intuitive, easy to understand format which gives a quick overview of your business and helps make smart decisions
  * Version: 1.1
- * Author: Infosoft Consultant
+ * Author: Infosoft Consultant 
  * Author URI: http://www.infosofttech.com/deepak.aspx
  * License: A "Slug" license name e.g. GPL2
  */
@@ -676,7 +676,7 @@ if ( ! class_exists( 'WC_IS_MIS_Report' ) ) {
             </table>	
 			<?php
 			else:
-				echo '<p>No customer found.</p>';
+				echo '<p>No orders found.</p>';
 			endif;
 		}
 	}
