@@ -3,10 +3,10 @@
  * Plugin Name: WooCommerce Sales MIS Report 
  * Plugin URI: http://www.plugin.infosofttech.com
  * Description: Woocommerce Sales Reporter shows you all key sales information in one main Dashboard in very intuitive, easy to understand format which gives a quick overview of your business and helps make smart decisions
- * Version: 1.2
+ * Version: 1.2 
  * Author: Infosoft Consultant 
  * Author URI: http://www.infosofttech.com/deepak.aspx
- * License: A "Slug" license name e.g. GPL2
+ * License: A  "Slug" license name e.g. GPL2
  */
  
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -32,7 +32,6 @@ if ( ! class_exists( 'WC_IS_MIS_Report' ) ) {
 				}
 			}
 		}
-		
 		function wcismis_add_page(){
 			$main_page = add_menu_page($this->plugin_name, 'MIS Report', 'manage_options', 'wcismis_page', array($this, 'wcismis_page'), plugins_url( 'woocommerce_ic_mis_report/assets/images/menu_icons.png' ), '57.5' );
 		}

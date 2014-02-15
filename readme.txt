@@ -61,7 +61,7 @@ New: Total categories count
 New: last seven sales amount in line chart
 New: Top Five products in term of amount (Pie chart)
 New: Today order (Meter Chart)
-=1.2=
+= 1.2 =
 bug fix for 1.1
 
 == Frequently Asked Questions ==
