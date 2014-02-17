@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: WooCommerce Sales MIS Report 
- * Plugin URI: http://www.plugin.infosofttech.com
+ * Plugin URI: http://plugins.infosofttech.com
  * Description: Woocommerce Sales Reporter shows you all key sales information in one main Dashboard in very intuitive, easy to understand format which gives a quick overview of your business and helps make smart decisions
  * Version: 1.2 
  * Author: Infosoft Consultant 
- * Author URI: http://www.infosofttech.com/deepak.aspx
+ * Author URI: http://www.infosofttech.com
  * License: A  "Slug" license name e.g. GPL2
  *
  */
@@ -180,7 +180,7 @@ if ( ! class_exists( 'WC_IS_MIS_Report' ) ) {
                                             <span><?php _e( 'Last 7 days Sales Amount', 'wcismis' ); ?></span>
                                         </h3>
                                         <div class="inside">
-                                             <div id="last_7_days_sales_order_amount" class="example-chart" style="width:90%"></div>	
+                                             <div id="last_7_days_sales_order_amount" class="example-chart" style="width:92%"></div>	
                                         </div>
                                     </div>
                                 </div>
