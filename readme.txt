@@ -23,6 +23,7 @@ Version: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 == Description ==
+
 Woocommerce Sales Reporter shows you all key sales information in one main Dashboard in very intuitive, easy to understand format which gives a quick
 overview of your business and helps make smart decisions
 Sales Summary Reports like Total Order, Recent Orders, Order Status, Order Summary, Top n Products, Customers, Country, Coupons, Payment Gateway
@@ -48,6 +49,7 @@ We provide the drill down option for sales order details.
 More features include such as order filter, order export, search etc.
 
 == Screenshots ==
+
 1. Sales Summary on Dashboard
 2. Graphical presentation of Last 7 Day Sales report
 3. Graphical presentation of Top 5 Products report
