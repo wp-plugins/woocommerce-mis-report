@@ -36,10 +36,10 @@ The Lite version is limited to showing summary data for past one month. Purchase
 
 == Installation ==
 1 Ensure you have latest version of [WooCommerce] (http://www.storeapps.org/woocommerce/) plugin installed.
-2 Download the Plug-in `woocommerce_ic_mis_report.zip`
-• Unzip and upload contents of the plugin to your '/wp-content/plugins/' directory.
-3 Activate the plugin through the 'Plugins' menu in WordPress
-4 Click on 'MIS Report' option within WordPress admin sidebar menu.
+2 Download the Plug-in `woocommerce_ic_mis_report.zip.`
+3 Unzip and upload contents of the plugin to your '/wp-content/plugins/' directory.
+4 Activate the plugin through the 'Plugins' menu in WordPress
+5 Click on 'MIS Report' option within WordPress admin sidebar menu.
 
 == Upgrade Notice ==
 We provide the up-gradation in Pro version, which will be release soon.
