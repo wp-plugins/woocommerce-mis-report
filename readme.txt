@@ -14,11 +14,11 @@ Author: Infosoft Consultant
 
 Requires at least: 3.5.1
 
-Tested up to:3.8.1
+Tested up to: 4.2.2
 
-Stable tag: 1.2
+Stable tag: 2.0
 
-Version: 1.2
+Version: 2.0
 
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -39,21 +39,38 @@ The Lite version is limited to showing summary data for past one month. Purchase
 • Unzip and upload contents of the plugin to your '/wp-content/plugins/' directory.
 • Activate the plugin through the 'Plugins' menu in WordPress
 • Click on 'MIS Report' option within WordPress admin sidebar menu.
+
 == Upgrade Notice ==
 We provide the up-gradation in Pro version, which will be release soon.
 We are providing more informative and analytics report in pro version. 
 We provide the graphical (pie chart or bar chart and line) representation for daily, weekly and monthly sales analysis.
 We provide the drill down option for sales order details.
 More features include such as order filter, order export, search etc.
+
 == Screenshots ==
-1. MIS Report Pro for WooCommerce Dashboard (some features only in paid versions)
-2. Daily, weekly, monthly and yearly sales count and amount
-3. Recent order list (Order ID, Order Date, Billing email, First Name, order Item Count and amount)
-4. Top 5 Billing country (total order count and amount)
-5. Top 5 customer (Customer billing first name, billing email address, order count and total customer order amount)
+1. Sales Summary on Dashboard
+2. Graphical presentation of Last 7 Day Sales report
+3. Graphical presentation of Top 5 Products report
+4. Daily, weekly, monthly and yearly sales count and amount
+5. Top 5 Category (total order count and amount)
+6. Top 5 Billing country (total order count and amount)
+7. Top 5 customer (Customer billing first name, billing email address, order count and total customer order amount)
+8. Recent order list (Order ID, Order Date, Billing email, First Name, order Item Count and amount)
+
 == Changelog ==
-* First release. (1.0) 
+= 2.0 - 01/07/2015 =
+• Tested: Compatible with latest WooCommerce 2.3.11 and Wordpress 4.2.2 versions.
+• UI: Major changes in UI
+• Added: Top 5 Category by salse amount
+• Added: Average sales per order
+• Added: Guest count
+• Removed: Graphical presentation of Today Order Count
+
+= 1.2 =
+bug fix for 1.1
+
 = 1.1 =
+* First release. (1.0) 
 New: Total sales order count
 New: Total sales order amount
 New: Total products count
@@ -61,14 +78,12 @@ New: Total categories count
 New: last seven sales amount in line chart
 New: Top Five products in term of amount (Pie chart)
 New: Today order (Meter Chart)
-= 1.2 =
 
-bug fix for 1.1
 
 == Frequently Asked Questions ==
 
-= Does this work with WooCommerce 2.0.20? =
-Yes. MIS Report is compatible upto WooCommerce 2.0.20.
+= Does this work with WooCommerce 2.3.11? =
+Yes. MIS Report is compatible upto WooCommerce 2.3.11
 = Can I export data from MIS Report? =
 No. Currently you can only see these reports. We are planning for CSV export in pro version.
 == Donations ==

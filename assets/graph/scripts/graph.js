@@ -1,34 +1,10 @@
-/*Top Customer*/
-function wcismis_pie_chart_top_product(response){
-	try{
-		var data = [[]];
-		
-		jQuery.each(response, function(k, v) {
-		
-			data[0].push([ v.ItemName,parseInt(v.Total)]);
-		});
-		
-		var plot1 = jQuery.jqplot ('top_product_pie_chart', data, 
-		{ 
-		  seriesDefaults: {
-			// Make this a pie chart.
-			renderer: jQuery.jqplot.PieRenderer, 
-			rendererOptions: {
-			  // Put data labels on the pie slices.
-			  // By default, labels show the percentage of the slice.
-			  showDataLabels: true
-			}
-		  }, 
-		  legend: { show:true, location: 'e' }
-		}
-	  );		
-	}
-	catch(e){
-	alert(e.message);
-	}
-}
+var top_product_response 	= null;
+var last_days_response 		= null;
+var ic_pie_placement 		= 'insideGrid';
+var ic_pie_show_legend 		= true;
+var ic_pie_location 		= 'e';
+var ic_pie_show_legend 		= true;
 
-/*Top  Customer*/
 jQuery(document).ready(function($){
 							//	alert("5");
 	var data = {"action":"wcismis_action_comman","graph_by_type":"top_product"}
@@ -39,21 +15,61 @@ jQuery(document).ready(function($){
       	url: ajax_object.ajaxurl,
       	dataType:"json",
       	success: function(response) {
-			if(response.length > 0)
-			wcismis_pie_chart_top_product(response);
+			if(response.length > 0){
+				top_product_response = response;
+				wcismis_pie_chart_top_product(top_product_response);
+			}
       	},
 	  	error: function(jqXHR, textStatus, errorThrown) {
-  			alert(jqXHR.responseText);
-			alert(textStatus);
-			alert(errorThrown);
+  			//alert(jqXHR.responseText);
+			//alert(textStatus);
+			//alert(errorThrown);
 		 }
     });
-});
+	
+	
+	var data = {"action":"wcismis_action_comman","graph_by_type":"Last_7_days_sales_order_amount"}
+	$.ajax({
+		type: "POST",	   
+     	data: data,
+	  	async: false,
+      	url: ajax_object.ajaxurl,
+      	dataType:"json",
+      	success: function(response) {
+			//alert(JSON.stringify(response));			
+			if(response.length > 0){
+				last_days_response = response;
+				wcismis_Last_7_days_sales_order_amount(last_days_response);
+			}
+      	},
+	  	error: function(jqXHR, textStatus, errorThrown) {
+  			//alert(jqXHR.responseText);
+			//alert(textStatus);
+			//alert(errorThrown);
+		 }
+    });
+	
+	
+	//fix_pie();
+	$( window ).resize(function() {
+		if(last_days_response){
+			wcismis_Last_7_days_sales_order_amount(last_days_response);
+		}
+		
+		if(top_product_response){
+			//fix_pie();
+			wcismis_pie_chart_top_product(top_product_response);
+		}
+		
+		
+		
+	});
+	
+	
 
-/*Today Order Count*/
-jQuery(document).ready(function($){
+
 						
-	var data = {"action":"wcismis_action_comman","graph_by_type":"today_order_count"}
+	/*var data = {"action":"wcismis_action_comman","graph_by_type":"today_order_count"}
 	$.ajax({
 		type: "POST",	   
      	data: data,
@@ -69,7 +85,7 @@ jQuery(document).ready(function($){
 			alert(textStatus);
 			alert(errorThrown);
 		 }
-    });
+    });*/
 });
 /*Today Order Count*/
 function wcismis_today_order_count(response){
@@ -78,6 +94,7 @@ function wcismis_today_order_count(response){
 		jQuery.each(response, function(k, v) {
 			s2 = [ parseInt(v.OrderCount)]
 		});
+	jQuery("#today_order_count_meter_gauge").html("");
 	plot3 = jQuery.jqplot('today_order_count_meter_gauge',[s2],{
        seriesDefaults: {
            renderer: jQuery.jqplot.MeterGaugeRenderer,
@@ -90,30 +107,56 @@ function wcismis_today_order_count(response){
        }
    });
 }
-/*Last 7 Days Sales Order*/
-jQuery(document).ready(function($){
+
+function fix_pie(){
+	var window_width = jQuery(window).width();
+	if(window_width <= 900){
+		ic_pie_placement 		= 'outsideGrid';
+		ic_pie_location 		= 'f';
+		ic_pie_show_legend 		= false;
+	}else{
+		ic_pie_placement 		= 'insideGrid';
+		ic_pie_location 		= 'f';
+		ic_pie_show_legend 		= true;				
+	}
+}
+
+function wcismis_pie_chart_top_product(response){
 	
-	var data = {"action":"wcismis_action_comman","graph_by_type":"Last_7_days_sales_order_amount"}
-	$.ajax({
-		type: "POST",	   
-     	data: data,
-	  	async: false,
-      	url: ajax_object.ajaxurl,
-      	dataType:"json",
-      	success: function(response) {
-			//alert("a1");
-			//alert(JSON.stringify(response));
-			if(response.length > 0)
-			wcismis_Last_7_days_sales_order_amount(response);
-      	},
-	  	error: function(jqXHR, textStatus, errorThrown) {
-  			alert(jqXHR.responseText);
-			alert(textStatus);
-			alert(errorThrown);
-		 }
-    });
-});
-/*Last 7 Days Sales Order*/
+	
+	//alert(ic_pie_show_legend)
+	
+	try{
+		var data = [[]];
+		
+		jQuery.each(response, function(k, v) {
+		
+			data[0].push([ v.ItemName,parseInt(v.Total)]);
+		});
+		jQuery("#top_product_pie_chart").html("");
+		var plot1 = jQuery.jqplot ('top_product_pie_chart', data, 
+		{ 
+		  seriesDefaults: {
+			// Make this a pie chart.
+			renderer: jQuery.jqplot.PieRenderer, 
+			rendererOptions: {
+			  // Put data labels on the pie slices.
+			  // By default, labels show the percentage of the slice.
+			  showDataLabels: true
+			}
+		  }, 
+		  legend: {
+			  	show:ic_pie_show_legend, 
+				location: ic_pie_location,
+				placement: ic_pie_placement }
+		}
+	  );		
+	}
+	catch(e){
+		alert(e.message);
+	}
+}
+
 function wcismis_Last_7_days_sales_order_amount(response){
 	try{
 		
@@ -123,8 +166,8 @@ function wcismis_Last_7_days_sales_order_amount(response){
 			data[0].push([ v.Date,parseInt(v.TotalAmount)]);
 			
 		});
-	  var plot1 = jQuery.jqplot('last_7_days_sales_order_amount', data, {
-		title:'Last 7 days Sales Amount',
+		jQuery("#last_7_days_sales_order_amount").html("");
+	  	var plot1 = jQuery.jqplot('last_7_days_sales_order_amount', data, {
 		seriesDefaults: { 
 			showMarker:true,
 			pointLabels: { show:true, ypadding:5 } 
@@ -156,3 +199,4 @@ function wcismis_Last_7_days_sales_order_amount(response){
 		alert(e.message);
 	}
 }
+
