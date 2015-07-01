@@ -35,11 +35,11 @@ Woocommerce Sales Reporter works with WooCommerce latest versions and WP e-Comme
 The Lite version is limited to showing summary data for past one month. Purchase the paid <a href="http://plugins.infosofttech.com" target="_blank">pro versions</a> for full access along with more features, <a href="http://plugins.infosofttech.com" target="_blank">click here</a> for more details
 
 == Installation ==
-• Ensure you have latest version of [WooCommerce] (http://www.storeapps.org/woocommerce/) plugin installed.
-• Download the Plug-in `woocommerce_ic_mis_report.zip`
+1 Ensure you have latest version of [WooCommerce] (http://www.storeapps.org/woocommerce/) plugin installed.
+2 Download the Plug-in `woocommerce_ic_mis_report.zip`
 • Unzip and upload contents of the plugin to your '/wp-content/plugins/' directory.
-• Activate the plugin through the 'Plugins' menu in WordPress
-• Click on 'MIS Report' option within WordPress admin sidebar menu.
+3 Activate the plugin through the 'Plugins' menu in WordPress
+4 Click on 'MIS Report' option within WordPress admin sidebar menu.
 
 == Upgrade Notice ==
 We provide the up-gradation in Pro version, which will be release soon.
